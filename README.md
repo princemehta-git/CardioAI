@@ -68,16 +68,15 @@ Target column: `1 = heart disease`, `0 = no heart disease`
    ```bash
    git clone https://github.com/your-username/cardioai.git
    cd cardioai
-```
-
+   ```
 
 2. **Install dependencies**
-```bash
-  pip install -r requirements.txt
-  Run the app
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
+   Run the app
 
 3. **Run the app**
-```bash
-  streamlit run app.py
-```
+   ```bash
+   streamlit run app.py
+   ```
