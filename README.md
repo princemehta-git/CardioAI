@@ -1,35 +1,39 @@
 # 💓 CardioAI — Heart Disease Prediction Web App
 
-CardioAI is an interactive Streamlit-based web application that predicts the likelihood of heart disease using machine learning models. Built for ease of use, it allows users to upload their own health data, select a predictive model, and view diagnostic results with intuitive visualizations.
+CardioAI is an interactive Streamlit-based web application that predicts the likelihood of heart disease using machine learning models. Built for healthcare professionals and individuals interested in heart health, it allows users to upload their own health data, select from multiple predictive models, and view diagnostic results with intuitive visualizations.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 [Launch CardioAI](https://your-streamlit-app-url.streamlit.app)
-
-> Replace this URL with your actual Streamlit app link after deployment.
+👉 [Launch CardioAI](https://cardioai-app.streamlit.app/)
 
 ---
 
 ## 🧠 Supported Machine Learning Models
 
-- ✅ Logistic Regression  
-- 🌲 Decision Tree  
-- 🌳 Random Forest  
-- 📍 K-Nearest Neighbors (KNN)  
-- 📈 Support Vector Machine (SVM)
+- ✅ Logistic Regression - Classic statistical approach for binary classification
+- 🌲 Decision Tree - Rule-based model with transparent decision paths
+- 🌳 Random Forest - Ensemble method combining multiple decision trees
+- 📍 K-Nearest Neighbors (KNN) - Classification based on feature similarity
+- 📊 Support Vector Machine (SVM) - Powerful classifier with different kernel options
+- 📈 Gaussian Naive Bayes - Probabilistic classifier based on Bayes' theorem
+- 🧪 Neural Network (ANN) - Deep learning approach with customizable architecture
 
-Users can choose any of these models via the sidebar in the app.
+Users can choose any of these models via the sidebar and adjust advanced parameters for optimal performance.
 
 ---
 
 ## 📊 Features
 
-- Upload custom CSV datasets or use the built-in heart dataset
-- Choose from 5 ML models and see results instantly
-- Interactive charts: confusion matrix, classification report
-- Fully responsive UI with clean layout
+- **Data Flexibility**: Upload custom CSV datasets or use the built-in heart disease dataset
+- **Model Selection**: Choose from 7 different ML models with customizable parameters
+- **Interactive Visualizations**: Confusion matrix, classification reports, and model-specific insights
+- **Real-time Predictions**: Input patient data and receive instant heart disease risk assessment
+- **Model Performance Analysis**: Compare accuracy, precision, recall across different models
+- **Advanced Customization**: Fine-tune model parameters through an intuitive interface
+- **Downloadable Models**: Export trained models for external use
+- **Responsive Design**: Clean, intuitive UI that works on desktop and mobile devices
 
 ---
 
@@ -37,30 +41,23 @@ Users can choose any of these models via the sidebar in the app.
 
 The default dataset is derived from the [UCI Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/Heart+Disease), featuring:
 
-- Age
-- Sex
-- Chest Pain Type
-- Resting Blood Pressure
-- Cholesterol
-- Fasting Blood Sugar
-- Max Heart Rate Achieved
-- Exercise-Induced Angina
-- ST Depression
-- ...and more
+| Feature | Description |
+|---------|-------------|
+| Age | Age in years |
+| Sex | Gender (1 = male, 0 = female) |
+| CP | Chest pain type (0-3) |
+| Trestbps | Resting blood pressure (mm Hg) |
+| Chol | Serum cholesterol (mg/dl) |
+| FBS | Fasting blood sugar > 120 mg/dl (1 = true, 0 = false) |
+| RestECG | Resting electrocardiographic results |
+| Thalach | Maximum heart rate achieved |
+| Exang | Exercise induced angina (1 = yes, 0 = no) |
+| Oldpeak | ST depression induced by exercise relative to rest |
+| Slope | Slope of the peak exercise ST segment |
+| CA | Number of major vessels colored by fluoroscopy (0-3) |
+| Thal | Thalassemia (normal, fixed defect, reversible defect) |
 
-Target column: `1 = heart disease`, `0 = no heart disease`
-
----
-
-## 📷 Screenshots
-
-| App Homepage | Model Results |
-|--------------|----------------|
-| ![Home](https://via.placeholder.com/400x250?text=CardioAI+Homepage) | ![Results](https://via.placeholder.com/400x250?text=Prediction+Results) |
-
-> Add real screenshots after deployment for better impact.
-
----
+Target column: `1 = heart disease present`, `0 = no heart disease`
 
 ## 🛠️ Run Locally
 
