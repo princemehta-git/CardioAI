@@ -29,7 +29,7 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     st.success("✅ Data uploaded successfully!")
 else:
-    df = pd.read_csv("heart.csv")
+    df = pd.read_csv("Heart.csv")
     st.info("ℹ️ Using default heart dataset.")
 
 # Show data
