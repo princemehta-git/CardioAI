@@ -24,7 +24,7 @@ import base64
 
 # Set page configuration
 st.set_page_config(
-    page_title="Heart Disease Prediction App",
+    page_title="CardioAI ~ Heart Disease Prediction App",
     page_icon="❤️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -52,7 +52,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown("<h1 class='main-header'>❤️ Heart Disease Prediction App</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='main-header'>CardioAI ~ ❤️ Heart Disease Prediction App</h1>", unsafe_allow_html=True)
 st.markdown("This app uses machine learning to predict heart disease based on patient data.")
 
 # Sidebar
@@ -574,4 +574,4 @@ else:
 
 # Footer
 st.markdown("---")
-st.markdown("Created with ❤️ using Streamlit")
+st.markdown("Created with ❤️ By Prince Mehta")
