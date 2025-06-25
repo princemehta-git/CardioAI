@@ -131,9 +131,9 @@ def preprocess_data(dataframe):
             if set(df_processed['thalach'].unique()).issubset({'Yes', 'No'}):
                 df_processed['target'] = df_processed['thalach'].map({'Yes': 1, 'No': 0})
                 df_processed = df_processed.drop('thalach', axis=1)
-        else:
-            st.error("Target column not found. Please ensure your dataset has a 'target' column.")
-            return None
+        # else:
+        #     st.error("Target column not found. Please ensure your dataset has a 'target' column.")
+        #     return None
     
     # One-hot encode categorical variables
     categorical_columns = ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal']
